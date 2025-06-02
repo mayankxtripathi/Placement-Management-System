@@ -1,0 +1,173 @@
+/* ==== Base Reset and Light Background ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== Navbar (Dark Header) ==== */
+.navbar {
+    background-color: #1a202c;
+    border-bottom: 1px solid #2d3748;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    margin-left: 300px;
+}
+
+.navbar-toggler {
+    border-color: #ccc;
+}
+
+.navbar-nav {
+    margin-top: -6px;
+}
+
+.navbar-nav li {
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.nav-link {
+    color: #b3c6e0 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #82cfff !important;
+}
+
+/* ==== Form Section ==== */
+#cv-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+}
+
+/* ==== Form Elements ==== */
+input[type="text"],
+input[type="file"],
+textarea {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 6px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3182ce;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+/* ==== Buttons ==== */
+button {
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ==== Image Preview ==== */
+#img8 {
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==== CV Template ==== */
+#cv-template {
+    display: none;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    color: #1a202c;
+}
+
+/* ==== Left Side (Profile and Contact) ==== */
+.background {
+    background-color: #f1f5f9;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.my-img {
+    border-radius: 50%;
+    border: 3px solid #3182ce;
+    margin-bottom: 15px;
+    max-width: 200px;
+}
+
+/* ==== Typography and Lists ==== */
+h1, h3, h4 {
+    color: #2d3748;
+    margin-bottom: 16px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Responsive Adjustments ==== */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar-nav li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #cv-form,
+    #cv-template {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
